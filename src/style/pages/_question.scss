@@ -1,0 +1,273 @@
+
+.question{
+   
+    padding:2rem 0rem;
+background-color: #F6F8FA;
+
+
+&-box
+{
+color:#474747;
+font-size: 1.8rem;
+line-height: 24px;
+font-weight: 600;
+padding-bottom: 2rem;
+
+
+
+}
+}
+.padding-btn{
+    padding: 2rem;
+  
+}
+.answer{
+    padding-top: 3rem;
+    &_box
+{
+    // padding: 2rem;
+    // border: 1px solid #F1F1F1;
+    // border-radius: 8px;
+    // display: flex;
+    // position: relative;
+    // width: 60%;
+  & label{
+    padding: 2rem;
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    & p{
+      margin: 0;
+    }
+  }
+}
+
+}
+
+li{
+    list-style-type: none;
+}
+
+.circle
+{
+  margin-right: 1.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #676767;
+    border-radius: 50%;
+   
+    padding: 4px 8px;
+    background-color: #F1F1F1;;
+}
+
+.marked
+{
+    position: absolute;
+    right: 2rem;
+    top:-2rem;
+    display: flex;
+    padding:1rem;
+    background-color:#F6F8FA ;
+ &_left
+ {
+padding-right: .4rem;
+ }
+ &_right
+ {
+color:#F88D8D;
+font-size: 1.4rem;
+font-weight: 600;
+
+ }
+}
+.container{
+    margin: 0px;
+}
+.checkBox{
+ margin-right: 1rem;
+}
+.margin-ryt{
+display: flex;
+
+}
+
+
+.popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 999;
+  }
+  
+  .popup_box {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .popup_box h2 {
+    color: var(--heading);
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .popup_heading {
+    margin-bottom: 4rem;
+  }
+  
+  .popup_heading h2 {
+    color: var(--heading);
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .popup_heading p {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+  }
+  
+  .popup .closebtn {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .popup_bg {
+    background-color: var(--white);
+    padding: 4rem 4rem 2rem;
+    border-radius: 2rem;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+  }
+  
+
+  
+
+  
+ 
+  
+
+  
+  
+
+
+  .closebtn {
+    position: absolute;
+    top: -2rem;
+    right: -1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.1rem solid var(--white-3);
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: var(--white);
+    cursor: pointer;
+  }
+  
+  .closebtn:before, .closebtn:after {
+    content: "";
+    height: 0.2rem;
+    width: 1.5rem;
+    position: absolute;
+    background-color: var(--heading);
+    border-radius: 2px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  
+  .closebtn:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .disp-1{
+    display: flex;
+    justify-content: space-between;
+    padding:2rem;
+  }
+  .match-btn{
+margin-left:2rem ;
+padding:1rem 3rem ;
+border-radius: 1rem;
+margin-bottom: 1rem;
+  }
+  .parent-calc{
+    display: flex;
+    & ul{
+      padding: 0;
+    }
+    & .children-1{
+      flex: 1;
+      & ul{
+      display: flex;
+      flex-wrap:wrap;
+      & li{
+        width: 33.3333%;
+        padding: 2px;
+        & button{
+          border: 1px solid #d1d1d1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          padding: .5rem 1.5rem;
+        }
+      }
+      }
+      
+    }
+    & .children-2{
+      flex: none;
+      
+       & ul{
+         & li{
+          padding: 2px;
+        & button{
+          border: 1px solid #d1d1d1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          padding: .5rem 1.5rem;
+        }
+         }
+
+       }
+    }
+  }
+  .super-parent-calc{
+    margin-bottom: 2rem;
+  }
+
+  
+
+
+
